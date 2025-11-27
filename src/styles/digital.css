@@ -1,0 +1,42 @@
+* { box-sizing: border-box; }
+.container { max-width: 1400px; margin: 0 auto; padding: 24px 40px; }
+
+/* Hero */
+.hero { text-align: center; padding: 80px 40px; background: linear-gradient(180deg, #e8f1f5 0%, #f8fafb 100%); margin-bottom: 24px; }
+.hero h1 { font-size: 3rem; font-weight: 800; color: #1a1a1a; margin-bottom: 12px; }
+.hero p { font-size: 1rem; color: #7589a3; max-width: 900px; margin: 0 auto; line-height: 1.7; }
+.section-title { font-size: 2rem; font-weight: 800; text-align: center; margin: 24px 0; color: #1a1a1a; }
+
+/* Stats */
+.stats-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 24px; margin: 12px 0 24px; }
+.stat-card { background: #fff; border: 1px solid #eef2f7; border-radius: 16px; padding: 22px; text-align: center; box-shadow: 0 2px 12px rgba(0,0,0,0.04); }
+.stat-number { font-size: 2rem; font-weight: 800; color: #0ea5e9; }
+.stat-label { margin-top: 6px; color: #7589a3; font-weight: 600; }
+
+/* Services */
+.services-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 24px; margin-bottom: 12px; }
+.service-card { background: #fff; border: 1px solid #eef2f7; border-radius: 16px; padding: 24px; box-shadow: 0 2px 12px rgba(0,0,0,0.04); }
+.service-icon { width: 54px; height: 54px; border-radius: 14px; background: #eaf2ff; display: flex; align-items: center; justify-content: center; margin-bottom: 12px; }
+.service-title { font-weight: 800; color: #1a1a1a; margin-bottom: 8px; }
+.service-description { color: #7589a3; margin-bottom: 10px; }
+.service-tags { display: flex; gap: 8px; flex-wrap: wrap; }
+.service-tags span { background: #f0fdf4; color: #16a34a; border: 1px solid #dcfce7; padding: 6px 10px; border-radius: 999px; font-size: 0.85rem; }
+
+/* Philosophy */
+.philosophy-section { background: #fff; border: 1px solid #eef2f7; border-radius: 16px; padding: 24px; box-shadow: 0 2px 12px rgba(0,0,0,0.04); color: #475569; }
+.philosophy-section p { margin: 0 0 10px; }
+
+/* Process */
+.process-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 24px; }
+.process-card { background: #fff; border: 1px solid #eef2f7; border-radius: 16px; padding: 20px; display: flex; gap: 16px; align-items: flex-start; box-shadow: 0 2px 12px rgba(0,0,0,0.04); }
+.process-number { width: 46px; height: 46px; border-radius: 12px; background: #eaf2ff; color: #2563eb; display: flex; align-items: center; justify-content: center; font-weight: 800; }
+.process-title { font-weight: 800; color: #1a1a1a; margin-bottom: 6px; }
+.process-description { color: #7589a3; }
+
+/* Responsive */
+@media (max-width: 768px) {
+  .container { padding: 32px 20px; }
+  .hero { padding: 48px 20px; }
+  .hero h1 { font-size: 2.2rem; }
+  .section-title { font-size: 1.6rem; }
+}

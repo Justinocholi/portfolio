@@ -2,8 +2,8 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1.5rem 5%;
-  background: white;
+  padding: 1rem 5%;
+  background: var(--card);
   box-shadow: 0 2px 5px rgba(0,0,0,0.05);
   position: sticky;
   top: 0;
@@ -11,9 +11,9 @@
 }
 
 .logo {
-  font-size: 1.8rem;
-  font-weight: bold;
-  color: #17a2b8;
+  font-size: 1.4rem;
+  font-weight: 800;
+  color: var(--accent);
   text-decoration: none;
 }
 
@@ -25,12 +25,22 @@
 
 .nav-links a {
   text-decoration: none;
-  color: #555;
-  font-weight: 500;
+  color: var(--muted);
+  font-weight: 600;
   transition: color 0.3s;
 }
 
 .nav-links a:hover,
 .nav-links a.active {
-  color: #17a2b8;
+  color: var(--accent);
 }
+
+.theme-toggle {
+  border: 1px solid var(--border);
+  background: var(--card);
+  color: var(--muted);
+  padding: 8px 12px;
+  border-radius: 12px;
+  cursor: pointer;
+}
+.theme-toggle:hover { color: var(--accent); border-color: var(--accent); }
