@@ -15,15 +15,6 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-[data-theme="dark"] {
-  --bg: #0f172a; /* slate-900 */
-  --text: #e5e7eb; /* gray-200 */
-  --muted: #9aa3af;
-  --card: #111827; /* gray-900 */
-  --border: #1f2937; /* gray-800 */
-  --accent: #0ea5e9;
-}
-
 a { font-weight: 600; color: var(--accent); text-decoration: inherit; }
 a:hover { opacity: 0.9; }
 
@@ -39,13 +30,10 @@ h1 { font-size: 2.5rem; line-height: 1.2; margin: 0; }
 button { font-family: inherit; cursor: pointer; }
 button:focus, button:focus-visible { outline: 3px auto -webkit-focus-ring-color; }
 
-/* Card and section defaults use theme variables */
+/* Card and section defaults use variables */
 .section-subtitle, .section-lead, p { color: var(--muted); }
 .feature-card, .project-card, .platform-card, .offer-card, .client-card,
 .approach-item, .service-card, .process-card, .philosophy-section, .stat-card {
   background: var(--card);
   border-color: var(--border);
 }
-
-/* Dark theme hero override to avoid light gap under navbar */
-[data-theme="dark"] .hero { background: linear-gradient(180deg, #0f172a 0%, #111827 100%) !important; }

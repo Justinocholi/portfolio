@@ -8,6 +8,7 @@
   position: sticky;
   top: 0;
   z-index: 1000;
+  position: relative;
 }
 
 .logo {
@@ -35,12 +36,14 @@
   color: var(--accent);
 }
 
-.theme-toggle {
-  border: 1px solid var(--border);
-  background: var(--card);
-  color: var(--muted);
-  padding: 8px 12px;
-  border-radius: 12px;
-  cursor: pointer;
+/* Hamburger */
+.hamburger { display: none; width: 40px; height: 40px; align-items: center; justify-content: center; border: 1px solid var(--border); background: var(--card); border-radius: 10px; cursor: pointer; }
+.hamburger .bar { width: 20px; height: 2px; background: var(--muted); display: block; margin: 3px 0; }
+
+/* Mobile menu */
+@media (max-width: 768px) {
+  .hamburger { display: inline-flex; }
+  .nav-links { position: absolute; top: 100%; left: 0; right: 0; background: var(--card); border-top: 1px solid var(--border); box-shadow: 0 4px 12px rgba(0,0,0,0.04); flex-direction: column; gap: 0; display: none; }
+  .nav-links li a { display: block; padding: 14px 5%; }
+  .nav.open .nav-links { display: flex; }
 }
-.theme-toggle:hover { color: var(--accent); border-color: var(--accent); }
